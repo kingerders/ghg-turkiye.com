@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Türkiye Sera Gazı Emisyonları İnteraktif Gösterge Paneli (Türkiye GHG Emissions Interactive Dashboard)</title>
     <meta name="description" content="Türkiye'nin 1990-2023 arası sera gazı emisyon verilerinin interaktif analizi ve NDC hedefleri. Interactive analysis of Turkey's GHG emissions data (1990-2023) and NDC targets.">
     <meta name="keywords" content="Türkiye, sera gazı, emisyon, NDC, iklim değişikliği, TÜİK, Türkiye, greenhouse gas, emissions, climate change">
     <meta name="author" content="Erdinç Ersoy">
-    <link rel="canonical" href="https://kingerders.github.io/turkiye-seragazi-paneli/">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Türkiye Sera Gazı Emisyonları İzleme Platformu">
+    <meta property="og:description" content="Türkiye'nin sera gazı emisyon trendlerini sektörler ve gaz türlerine göre ayrıntılı şekilde sunan izleme platformu">
+    <meta property="og:url" content="https://ghg-turkiye.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <link rel="canonical" href="https://ghg-turkiye.com/">
     
     <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8723630978676321"
      crossorigin="anonymous"></script>
-     
+
          <script>
         (adsbygoogle = window.adsbygoogle || []).push({
             google_ad_client: "ca-pub-8723630978676321",
@@ -1780,6 +1787,11 @@
                     <div class="stat-label">F-gazlar (${fGasesPercent}%)</div>
                 </div>
             `;
+        }
+
+        // Force HTTPS redirect
+        if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
+            location.replace('https:' + window.location.href.substring(window.location.protocol.length));
         }
 
         // Initialize dashboard when page loads

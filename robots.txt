@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ghg-turkiye.com/sitemap.xml
+
+# AdSense ads.txt
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Googlebot
+Allow: /ads.txt

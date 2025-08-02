@@ -1,0 +1,23 @@
+# GitHub Pages Configuration
+title: "Türkiye Sera Gazı Emisyonları İzleme Platformu"
+description: "Türkiye'nin sera gazı emisyon trendlerini sektörler ve gaz türlerine göre ayrıntılı şekilde sunan izleme platformu"
+url: "https://ghg-turkiye.com"
+baseurl: ""
+
+# Force HTTPS
+enforce_ssl: ghg-turkiye.com
+
+# SEO
+lang: tr
+author: "Erdinç Ersoy"
+
+# Jekyll plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files
+exclude:
+  - README.md
+  - .gitignore
+  - .DS_Store
