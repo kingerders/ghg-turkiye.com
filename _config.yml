@@ -1,11 +1,11 @@
 # GitHub Pages Configuration
 title: "Türkiye Sera Gazı Emisyonları İzleme Platformu"
 description: "Türkiye'nin sera gazı emisyon trendlerini sektörler ve gaz türlerine göre ayrıntılı şekilde sunan izleme platformu"
-url: "https://ghg-turkiye.com"
+url: "https://www.ghg-turkiye.com"
 baseurl: ""
 
 # Force HTTPS
-enforce_ssl: ghg-turkiye.com
+enforce_ssl: www.ghg-turkiye.com
 
 # SEO
 lang: tr

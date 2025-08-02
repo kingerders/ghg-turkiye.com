@@ -11,10 +11,10 @@
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Türkiye Sera Gazı Emisyonları İzleme Platformu">
     <meta property="og:description" content="Türkiye'nin sera gazı emisyon trendlerini sektörler ve gaz türlerine göre ayrıntılı şekilde sunan izleme platformu">
-    <meta property="og:url" content="https://ghg-turkiye.com/">
+    <meta property="og:url" content="https://www.ghg-turkiye.com/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="tr_TR">
-    <link rel="canonical" href="https://ghg-turkiye.com/">
+    <link rel="canonical" href="https://www.ghg-turkiye.com/">
     
     <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8723630978676321"
@@ -1789,9 +1789,14 @@
             `;
         }
 
-        // Force HTTPS redirect
+        // Force HTTPS and www redirect
         if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
             location.replace('https:' + window.location.href.substring(window.location.protocol.length));
+        }
+        
+        // Redirect non-www to www (preferred domain)
+        if (location.hostname === 'ghg-turkiye.com') {
+            location.replace('https://www.ghg-turkiye.com' + location.pathname + location.search + location.hash);
         }
 
         // Initialize dashboard when page loads
