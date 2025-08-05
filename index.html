@@ -1499,7 +1499,8 @@
             document.getElementById('select-year-desc').textContent = t.selectYearDesc;
             document.getElementById('sectors-title').textContent = t.sectorsTitle;
             document.getElementById('ghg-title').textContent = t.ghgTitle;
-            document.getElementById('footer-text').textContent = t.footerText;
+            // footerText'teki \n'leri <br> ile değiştirerek innerHTML olarak ekle
+            document.getElementById('footer-text').innerHTML = t.footerText.replace(/\n/g, '<br>');
         }
 
         // Initialize the dashboard
