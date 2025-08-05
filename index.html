@@ -491,6 +491,7 @@
     <div class="container">
         <div class="header">
             <h1 id="main-title">🇹🇷 Türkiye Sera Gazı Emisyonları İzleme ve Görselleştirme Platformu</h1>
+            <p id="main-subtitle" style="font-size: 16px; color: rgba(255,255,255,0.8); margin-top: 3px;">Türkiye’nin sera gazı emisyon trendlerini sektörler ve gaz türlerine göre ayrıntılı şekilde sunan; ayrıca azaltım hedefleriyle karşılaştırmalı analiz imkânı sağlayan bir izleme aracıdır.</p>
         </div>
 
         <div class="year-selector">
@@ -1498,8 +1499,7 @@
             document.getElementById('select-year-desc').textContent = t.selectYearDesc;
             document.getElementById('sectors-title').textContent = t.sectorsTitle;
             document.getElementById('ghg-title').textContent = t.ghgTitle;
-            // footerText'teki \n'leri <br> ile değiştirerek innerHTML olarak ekle
-            document.getElementById('footer-text').innerHTML = t.footerText.replace(/\n/g, '<br>');
+            document.getElementById('footer-text').textContent = t.footerText;
         }
 
         // Initialize the dashboard
